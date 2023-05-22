@@ -1,0 +1,23 @@
+.password{
+  width: 300px;
+
+  &__input {
+    margin-bottom: 5px;
+  }
+
+  &__notification {
+    background-color: gray;
+  }
+}
+
+.bgr {
+  background-color: red;
+}
+
+.bgy {
+  background-color: yellow;
+}
+
+.bgg {
+  background-color: green;
+}

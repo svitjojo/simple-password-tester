@@ -1,0 +1,18 @@
+<div class="content" role="main">
+  <div class="password">
+    <label for="password">Enter a password:</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      class="password__input"
+      (input)="onPasswordChange($event)"
+      [(ngModel)]="password"
+    >
+    <div class="password__notification">
+      <div [ngClass]="{'bgr': passwordStrength === 'easy' || passwordStrength === 'short', 'bgy': passwordStrength === 'medium', 'bgg': passwordStrength === 'strong'}">Easy</div>
+      <div [ngClass]="{'bgr': passwordStrength === 'short', 'bgy': passwordStrength === 'medium', 'bgg': passwordStrength === 'strong'}">Medium</div>
+      <div [ngClass]="{'bgr': passwordStrength === 'short', 'bgg': passwordStrength === 'strong'}">Strong</div>
+    </div>
+  </div>
+</div>
